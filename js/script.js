@@ -3,10 +3,11 @@ console.log('Vue on', Vue)
 const { createApp } = Vue;
 
 const app = createApp({
-    data() {
+    data: () => ({
+        tasks: ["HTML", "CSS", "Responsive design", "Javascript"]
 
 
-    }
+    })
 })
 
-app.mount('#root');
+app.mount('#app');
